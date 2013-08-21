@@ -13,6 +13,7 @@
       a {
         background: none;
         padding: 5px 0;
+        text-align: right;
         @include box-shadow(none);
         &:hover, &.active {
           color: $linkColorHover;

@@ -67,7 +67,9 @@
             <?php if ($copyright): ?>
               <small class="copyright pull-left"><?php print $copyright; ?></small>
             <?php endif; ?>
-            <small class="pull-right"><a href="#"><?php print t('Back to Top'); ?></a></small>
+            <small class="link-back-to-top pull-right">
+              <a href="#"><i class="icon-angle-up"></i> <?php print t('Back to Top'); ?></a>
+            </small>
           </div>
         </footer>
       </div>

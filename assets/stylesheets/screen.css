@@ -1,3 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic);
+body p {
+  font-family: Georgia,"Times New Roman",Times,Serif;
+  font-size: 1.5em;
+  line-height: 1.65em;
+  margin: 0 0 1.5em;
+}
+body p.lead {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.0em;
+  line-height: 1.4em;
+  margin: 0 0 1.5em;
+  font-weight: 400;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -8799,6 +8814,29 @@ body #content h2 {
     bottom: -10px;
     margin: 0 0 0px -50px;
   }
+  body #footer .copyright {
+    text-align: center;
+    display: block;
+    float: none;
+  }
+  body #footer .link-back-to-top {
+    text-align: center;
+    float: none;
+    display: block;
+    margin-top: 15px;
+  }
+  body #footer .link-back-to-top i {
+    display: block;
+    font-size: 1.8em;
+  }
+  body #footer:before {
+    content: '';
+    border-top: 1px solid #eeeeee;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin: -25px 0 0px -50px;
+  }
 }
 
 .brand {
@@ -8849,6 +8887,7 @@ body #content h2 {
 #main-menu ul.menu > li a {
   background: none;
   padding: 5px 0;
+  text-align: right;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -8891,4 +8930,18 @@ body #content h2 {
 }
 .search-form .form-submit {
   display: none;
+}
+@media (max-width: 767px) {
+  .search-form {
+    float: none;
+  }
+  .search-form .form-item {
+    display: block;
+    margin: 0;
+  }
+  .search-form .form-item .form-text {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
