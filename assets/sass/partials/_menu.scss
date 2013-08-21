@@ -1,23 +1,39 @@
 // Menu
 // Styles for Menus and Navs
 // --------------------------------------------------
+
+// Main Menu
+// --------------------------------------------------
 #main-menu {
-  clear: both;
+  float: right;
+  clear: right;
   ul.menu {
     > li {
       float: none;
-      line-height: 10px;
-      > a {
-        text-align: right;
-        &.active {
+      a {
+        background: none;
+        padding: 5px 0;
+        @include box-shadow(none);
+        &:hover, &.active {
+          color: $linkColorHover;
           background: none;
-          box-shadow: none;
-        } 
-        &:hover {
-          color: #4182D1;
+          @include box-shadow(none);
+        }
+      }
+    }
+    ul {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    float: none;
+    ul.menu {
+      > li {
+        a {
+          display: block;
+          text-align: center;
         }
       }
     }
   }
-
 }
