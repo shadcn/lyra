@@ -2,3 +2,34 @@
 // Layout
 // Styles for main layout
 // --------------------------------------------------
+body{
+  #sidebar {
+    h1.brand{
+      font-size: 3.6em;
+      text-align: right;
+      a {
+        color: $black;
+        line-height: 1em;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    h2 {
+      color: $black;
+      font-size: 14px;
+      text-align: right;
+      width: 175px;
+      line-height: 22px;
+      font-weight: normal;
+    } 
+  }
+  #content {
+    h2 {
+      font-size: 3.4em;
+      line-height: 110%;
+    }
+  }
+}
+
+

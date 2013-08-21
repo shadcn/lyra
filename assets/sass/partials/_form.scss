@@ -2,3 +2,12 @@
 // Layout
 // Styles for Forms
 // --------------------------------------------------
+.search-form {
+  clear: both;
+  margin-bottom: 15px;
+  .form-text {
+    background: url('../images/bg/bg-search.png') no-repeat 7px 5px #F1F1F1;
+    padding-left: 30px;
+  }
+}
+

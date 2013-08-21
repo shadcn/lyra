@@ -1,3 +1,9 @@
 // Page
 // Styles for panels
 // --------------------------------------------------
+.pane-blog .pane-content {
+  padding: 0 50px;
+  .field-post-date {
+    margin-right: 30px;
+  }
+}

@@ -1,3 +1,23 @@
 // Menu
 // Styles for Menus and Navs
 // --------------------------------------------------
+#main-menu {
+  clear: both;
+  ul.menu {
+    > li {
+      float: none;
+      line-height: 10px;
+      > a {
+        text-align: right;
+        &.active {
+          background: none;
+          box-shadow: none;
+        } 
+        &:hover {
+          color: #4182D1;
+        }
+      }
+    }
+  }
+
+}
